@@ -12,6 +12,6 @@
 
 class Tracker{
 public:
-	void trackBall(VideoCapture cap);
+	void trackBall(cv::VideoCapture cap);
 
 };
