@@ -1,10 +1,11 @@
-#include "main.h"
+#include "openCV.h"
+#include "track.h"
 
 #define MINTRACKAREA 50
 
 using namespace cv;
 
-	void Tracker::trackBall(VideoCapture cap){
+	Mat Tracker::trackBall(VideoCapture cap){
 
 		Mat frame;
 		
@@ -37,6 +38,8 @@ using namespace cv;
 
 		imshow("Tennis Ball", frame);
 		imshow("Thresholded Tennis Ball", threshFrame);
+
+		return threshFrame;
 	
 	};
 

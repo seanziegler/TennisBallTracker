@@ -24,9 +24,18 @@
     <ClCompile Include="track.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="motorcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="openCV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="track.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

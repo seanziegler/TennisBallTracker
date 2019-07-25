@@ -1,4 +1,4 @@
-#include "main.h"
+#include "openCV.h"
 
 using namespace cv;
 
