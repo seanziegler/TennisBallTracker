@@ -1,5 +1,7 @@
 #include "main.h"
 
+#define MINTRACKAREA 50
+
 using namespace cv;
 
 	void Tracker::trackBall(VideoCapture cap){
@@ -38,4 +40,25 @@ using namespace cv;
 	
 	};
 
+	void Tracker::activateTracker(Mat threshFrame, VideoCapture cap) {
+
+		int minTrackArea = MINTRACKAREA;
+
+		float area = threshFrame.rows * threshFrame.cols;
+
+		std::cout << area;
+
+		if (area > minTrackArea) {
+
+			Tracker::trackBall(cap);
+		}
+		else
+		{
+			std::cout << "No object detected.";
+		}
+
+
+	};
+
+	
 

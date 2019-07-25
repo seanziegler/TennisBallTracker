@@ -9,7 +9,7 @@ int main(){
 	// Capture video from default video device
 	cv::VideoCapture cap(0);
 
-	// Check if video capture opened successfull 
+	// Check if video capture opened successful
 	if (cap.isOpened()) {
 		std::cout << "Webcam feed aquired.";
 		webcam = true;
@@ -21,7 +21,7 @@ int main(){
 	while (webcam){
 		Tracker tracker;
 
-		tracker.trackBall(cap);
+		tracker.activateTracker(cap);
 
 		int key = cv::waitKey(2);
 		if (key == 27) {
